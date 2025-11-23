@@ -12,6 +12,7 @@
         window.onload = function () {
             alert("Welcome to My Portfolio! 🎉");
         };
+        
     </script>
     
     <style>
@@ -35,7 +36,7 @@
         .home-page.cards-container.card{
             width: 300px;
         }
-        .card{
+    .card{
               width: 300px;
               background:#DBC2A6;
               border-radius: 8px;
@@ -44,6 +45,35 @@
               margin-bottom: 5%;
         }
 
+    .profile-section {
+        text-align: center;          
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        justify-content: center;
+    }
+
+    #profileBtn {
+        background-color: #DBC2A6;   
+        border: none;
+        color: #414A37;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        
+    }
+       #myProfilePic {
+        display: none;               
+        width: 300px;
+        height: fit-content;
+        border-radius: 40px;          
+        object-fit: cover;           
+        margin-top: 10px;
+        border: 3px solid #DBC2A6;  
+        background-color: transparent;
+    }
 
         </style>
     <link rel="stylesheet" href="style.css">
@@ -90,7 +120,23 @@
       </div>
         </div>
         </div>
-  
+
+        </div> 
+    <div class="profile-section">
+        <button id="profileBtn" onclick="toggleImage()">Profile</button>
+        <br>
+        <img id="myProfilePic" src="profile.jpg" alt="My Profile">
+    </div>
+  <script>
+    function toggleImage() {
+        var img = document.getElementById('myProfilePic');
+        if (img.style.display === 'none' || img.style.display === '') {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    }
+</script>
    
 
     <footer>
