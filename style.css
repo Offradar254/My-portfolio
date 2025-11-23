@@ -1,0 +1,129 @@
+h1,h4{
+    text-align: center;
+    font-weight: bold;
+    contain: paint;
+    animation: backwards;
+    color: #414A37;
+    font-family: Georgia;
+}
+body{
+    background-color:#DBC2A6 ;
+    text-indent: 0%;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style:none ;
+    margin: 0;
+    text-align: center;
+    display: inline-flex;
+   gap: 4rem;
+    
+}    
+   
+nav{
+    background-color: #414A37;
+    text-align:center;
+    padding: 10px;
+    border-radius:5px ;
+
+}
+    nav a {
+            color: #DBC2A6 ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color:antiquewhite;
+
+        }
+
+
+    h3{
+       color: #DBC2A6;
+        font-weight: bold;
+        font-family:Georgia;
+    }
+    
+    .card{
+      background-color: #414A37;
+      color: #DBC2A6;
+      margin-top:1% ;
+      border-radius: 5px;
+      max-width:300px ;
+      height:300px ;
+      }
+
+    .card a{
+       color: antiquewhite;
+       text-decoration: none;
+       
+    }
+    .card a:hover{
+       text-decoration:underline ;
+    }
+
+    .container{
+        padding:20px ;
+    }
+
+        .cards-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            
+        }
+        img{
+            height:300px;
+            width: 300; 
+            border-radius: 20px;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 10%;
+            padding-left:50px ;
+            background-color: #414A37;
+        }
+               
+     img:hover {
+                animation: bounce 0.5s;
+                }
+        
+                @keyframes bounce {
+        
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+        
+                    50% {
+                        transform: translateY(-15px);
+                    }
+                }
+
+        section{
+            text-align: center;
+            font-family:sans-serif ;
+            font-size:30px;
+            font-weight: 100;
+            color: #414A37;
+        }
+        h5{
+            font-size:50px ;
+        }
+        footer{
+            color: #DBC2A6;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 0;
+            display: flex;
+            bottom:0 ;
+            background-color: #414A37;
+            font-size: medium;
+            border-radius: 10px;
+            height:auto;
+            width: 100%;
+            margin-top: auto;
+        }
